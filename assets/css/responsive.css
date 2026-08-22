@@ -1,0 +1,22 @@
+@media (max-width: 992px) { 
+ #hero-setion .slider{
+  padding: 30px 10px;
+ }
+
+ #hero-setion .banner-link a:last-child{
+    margin-left: 10px;
+    padding: 14px 10px;
+}
+
+  #hero-setion .ims-fluid{
+    padding: 20px;
+  }
+  #section-counter .item{
+    margin: 20px;
+  }
+
+  #about .about-info li{
+  padding: 10px 5px;
+    
+  }
+}

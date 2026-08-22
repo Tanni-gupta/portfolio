@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skills Progress</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  :root{
+    --accent:#a9b087;
+    --accent-light:#e3e6d8;
+    --text-dark:#2b2b2b;
+    --text-muted:#8a8a8a;
+  }
+  body{
+    background:#f4f5f7;
+    font-family:'Segoe UI', Roboto, Arial, sans-serif;
+  }
+  .page-title{
+    text-align:center;
+    color:#c9cdd6;
+    font-weight:400;
+    margin:40px 0 30px;
+    font-size:1rem;
+  }
+  .skill-card{
+    background:#fff;
+    border-radius:10px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.06);
+    padding:30px 20px 20px;
+    margin-bottom:30px;
+    text-align:center;
+  }
+  .skill-card h5{
+    font-weight:700;
+    color:var(--text-dark);
+    margin-bottom:25px;
+    letter-spacing:.5px;
+  }
+  .progress-circle{
+    position:relative;
+    width:150px;
+    height:150px;
+    margin:0 auto 25px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:conic-gradient(var(--accent) calc(var(--percent) * 1%), var(--accent-light) 0);
+  }
+  .progress-circle::before{
+    content:"";
+    position:absolute;
+    width:120px;
+    height:120px;
+    background:#fff;
+    border-radius:50%;
+  }
+  .progress-circle .value{
+    position:relative;
+    z-index:2;
+    font-size:2rem;
+    font-weight:800;
+    color:var(--text-dark);
+  }
+  .progress-circle .value sup{
+    font-size:1rem;
+    font-weight:700;
+    top:-1em;
+  }
+  .stats-row{
+    display:flex;
+    border-top:1px solid #eee;
+    padding-top:15px;
+  }
+  .stats-row .stat{
+    flex:1;
+  }
+  .stats-row .stat:first-child{
+    border-right:1px solid #eee;
+  }
+  .stats-row .stat .num{
+    color:var(--accent);
+    font-weight:700;
+    font-size:1.1rem;
+    display:block;
+  }
+  .stats-row .stat .label{
+    color:var(--text-muted);
+    font-size:.8rem;
+  }
+</style>
+</head>
+<body>
+
+<p class="page-title">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+
+<div class="container">
+  <div class="row">
+
+    <!-- Card template repeated for each skill -->
+    <div class="col-md-4">
+      <div class="skill-card">
+        <h5>CSS</h5>
+        <div class="progress-circle" style="--percent:95;">
+          <div class="value">95<sup>%</sup></div>
+        </div>
+        <div class="stats-row">
+          <div class="stat"><span class="num">28%</span><span class="label">Last week</span></div>
+          <div class="stat"><span class="num">60%</span><span class="label">Last month</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="skill-card">
+        <h5>HTML</h5>
+        <div class="progress-circle" style="--percent:98;">
+          <div class="value">98<sup>%</sup></div>
+        </div>
+        <div class="stats-row">
+          <div class="stat"><span class="num">28%</span><span class="label">Last week</span></div>
+          <div class="stat"><span class="num">60%</span><span class="label">Last month</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="skill-card">
+        <h5>jQuery</h5>
+        <div class="progress-circle" style="--percent:40;">
+          <div class="value">40<sup>%</sup></div>
+        </div>
+        <div class="stats-row">
+          <div class="stat"><span class="num">28%</span><span class="label">Last week</span></div>
+          <div class="stat"><span class="num">60%</span><span class="label">Last month</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="skill-card">
+        <h5>Javascript</h5>
+        <div class="progress-circle" style="--percent:50;">
+          <div class="value">50<sup>%</sup></div>
+        </div>
+        <div class="stats-row">
+          <div class="stat"><span class="num">28%</span><span class="label">Last week</span></div>
+          <div class="stat"><span class="num">60%</span><span class="label">Last month</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="skill-card">
+        <h5>Python</h5>
+        <div class="progress-circle" style="--percent:60;">
+          <div class="value">60<sup>%</sup></div>
+        </div>
+        <div class="stats-row">
+          <div class="stat"><span class="num">28%</span><span class="label">Last week</span></div>
+          <div class="stat"><span class="num">60%</span><span class="label">Last month</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="skill-card">
+        <h5>SQL</h5>
+        <div class="progress-circle" style="--percent:70;">
+          <div class="value">70<sup>%</sup></div>
+        </div>
+        <div class="stats-row">
+          <div class="stat"><span class="num">28%</span><span class="label">Last week</span></div>
+          <div class="stat"><span class="num">60%</span><span class="label">Last month</span></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
+</body>
+</html>
