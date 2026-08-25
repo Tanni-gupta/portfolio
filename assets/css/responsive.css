@@ -19,4 +19,9 @@
   padding: 10px 5px;
     
   }
+  #blog .row{
+    align-items: center;
+    justify-content: center;
+  }
+  
 }
