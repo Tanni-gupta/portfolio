@@ -463,13 +463,14 @@
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 25px;
+    padding-bottom: 12px; 
 }
 #ftco-footer .fot-heading .far{
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 15px;
-     color: #b7bec5;
-     padding-top: 15px;
+    color: #b7bec5;
+     padding-top: 20px;
 
 }
 #ftco-footer .fot-heading .btn{
@@ -480,5 +481,16 @@
 #ftco-footer .link h2{
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: 25px; 
+    font-size: 25px;
+    padding-bottom: 12px; 
 }
+#ftco-footer .link a{
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 15px;
+    color: #b7bec5;
+    padding-top: 30px;
+    
+}
+ 
